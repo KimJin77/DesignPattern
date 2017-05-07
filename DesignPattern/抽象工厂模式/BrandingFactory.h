@@ -1,0 +1,20 @@
+//
+//  BrandingFactory.h
+//  DesignPattern
+//
+//  Created by Kim on 2017/5/6.
+//  Copyright © 2017年 Kim. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
+@interface BrandingFactory : NSObject
+
++ (BrandingFactory *)factory;
+
+- (UIView *)brandedView;
+- (UIButton *)brandedButton;
+- (UIToolbar *)brandedToolbar;
+
+@end
